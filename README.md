@@ -24,18 +24,18 @@ The bbox for the crop is determined by four points of eyes using the following a
 
 ## Metadata description
 
-`task_id`: str - each collected session has a unique task number
-`step`: str - the name of a specific frame within the session
-`relative_x`: float - the relative coordinate of the horizontal direction of view (0 is the left edge of the screen, 1 is the right)
-`relative_y`: float - the relative coordinate of the vertical direction of view (0 is the top of the screen, 1 is the bottom)
-`screen_size_x`: int - width in pixels (screen resolution)
-`screen_size_y`: int - height in pixels (screen resolution)
-`screen_size_cm_x`: float - screen width in centimeters
-`screen_size_cm_y`: float - screen height in centimeters
-`diagonal_cm`: float - the diagonal of the screen in centimeters
-`type`: str - point type. gaze_on_fixed_point - a pre-specified point (most often the corners and center of the screen), gaze_on_random_point - random point
-`is_notebook`: bool - true if the performer indicated that he has a laptop
-`eyes_left_left`: Tuple[float, float] - coordinates of the left corner of the left eye
-`eyes_left_right`: Tuple[float, float] - coordinates of the right corner of the left eye
-`eyes_right_left`: Tuple[float, float] - coordinates of the left corner of the right eye
-`eyes_right_right`: Tuple[float, float] - coordinates of the right corner of the right eye
+- `task_id`: str - each collected session has a unique task number
+- `step`: str - the name of a specific frame within the session
+- `relative_x`: float - the relative coordinate of the horizontal direction of view (0 is the left edge of the screen, 1 is the right)
+- `relative_y`: float - the relative coordinate of the vertical direction of view (0 is the top of the screen, 1 is the bottom)
+- `screen_size_x`: int - width in pixels (screen resolution)
+- `screen_size_y`: int - height in pixels (screen resolution)
+- `screen_size_cm_x`: float - screen width in centimeters
+- `screen_size_cm_y`: float - screen height in centimeters
+- `diagonal_cm`: float - the diagonal of the screen in centimeters
+- `type`: str - point type. gaze_on_fixed_point - a pre-specified point (most often the corners and center of the screen), gaze_on_random_point - random point
+- `is_notebook`: bool - true if the performer indicated that he has a laptop
+- `eyes_left_left`: Tuple[float, float] - coordinates of the left corner of the left eye
+- `eyes_left_right`: Tuple[float, float] - coordinates of the right corner of the left eye
+- `eyes_right_left`: Tuple[float, float] - coordinates of the left corner of the right eye
+- `eyes_right_right`: Tuple[float, float] - coordinates of the right corner of the right eye
