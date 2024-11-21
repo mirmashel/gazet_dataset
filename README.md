@@ -2,7 +2,7 @@
 Dataset for 2D gaze direction estimation
 
 ## Overview
-GazeT dataset consists of 6750 sessions obtained through crowdsourcing and contains 143k annotated photos of operators in front of screen for the task of determining 2D gaze direction. The sample for training and testing was collected using toloka. The markups were asked to click on points on the screen and at the moment of clicking, the relative coordinate of the screen and the photo of the person at that moment were fixed. The marketer also had to enter the diagonal of his screen and the type of his device (PC or laptop). See paper for details. 
+GazeT dataset consists of 6750 sessions obtained through crowdsourcing and contains 143k annotated photos of operators in front of screen for the task of determining 2D gaze direction. The sample for training and testing was collected using toloka. The markers were asked to click on points on the screen and at the moment of clicking, the relative coordinate of the screen and the photo of the person at that moment were fixed. The marker also had to enter the diagonal of his screen and the type of his device (PC or laptop). See paper for details. 
 
 ## Download
 If you would like to access the GazeT dataset, please fill out this [google form](https://docs.google.com/forms/d/e/1FAIpQLSciF9ur9a6BZbK7l66msrRwXeKFsaW2kki9HBj2sk0JTm7Mtw/viewform?usp=sf_link). The download link will be sent to you once the form is accepted.
