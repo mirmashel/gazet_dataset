@@ -4,7 +4,18 @@ Dataset for 2D gaze direction estimation
 ![image](https://github.com/user-attachments/assets/b48bb6aa-bc8e-4ec4-8a90-5cfb24cde36e)
 
 ## Overview
-GazeT dataset consists of 6750 sessions obtained through crowdsourcing and contains 143k annotated photos of operators in front of screen for the task of determining 2D gaze direction. The sample for training and testing was collected using toloka. The markers were asked to click on points on the screen and at the moment of clicking, the relative coordinate of the screen and the photo of the person at that moment were fixed. The marker also had to enter the diagonal of his screen and the type of his device (PC or laptop). See paper for details.
+GazeT dataset consists of 6744 sessions obtained through crowdsourcing and contains 144k annotated photos of operators in front of screen for the task of determining 2D gaze direction. The sample for training and testing was collected using toloka. The markers were asked to click on points on the screen and at the moment of clicking, the relative coordinate of the screen and the photo of the person at that moment were fixed. The marker also had to enter the diagonal of his screen and the type of his device (PC or laptop). See paper for details.
+
+## Comparison to other datasets
+
+| Dataset | Number of unique persons | Number of photos |
+| ------ | ----------- | ---- |
+| MPIIGaze | 15 | ∼213k |
+| Gaze360 | 238 | ∼100k | 
+| ETH-XGaze | 110 | ∼1kk |
+| EYEDIAP | 16 | ∼85k |
+| GazeCapture | ~1,5k | ∼2,5kk |
+| GazeT | ~6,7k | ∼144k |
 
 ## Download
 If you would like to access the GazeT dataset, please fill out this [google form](https://docs.google.com/forms/d/e/1FAIpQLSciF9ur9a6BZbK7l66msrRwXeKFsaW2kki9HBj2sk0JTm7Mtw/viewform?usp=sf_link). The download link will be sent to you once the form is accepted.
@@ -13,7 +24,6 @@ Please cite our paper in your publications if the GazeT dataset is used in your 
 
 ## Data reading and data structure
 Load dataset and put it under `./dataset`. Dataset contains images and metadata. Data loading process and visualizations can be found in `load_dataset.ipynb`.
-
 
 ### Crop design
 The bbox for the crop is determined by four points of eyes using the following algorithm:
