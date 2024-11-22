@@ -12,7 +12,8 @@ If you would like to access the GazeT dataset, please fill out this [google form
 Please cite our paper in your publications if the GazeT dataset is used in your research:
 
 ## Data reading and data structure
-Data loading process and visualizations can be found in `load_dataset.ipynb`.
+Load dataset and put it under `./dataset`. Dataset contains images and metadata. Data loading process and visualizations can be found in `load_dataset.ipynb`.
+
 
 ### Crop design
 The bbox for the crop is determined by four points of eyes using the following algorithm:
