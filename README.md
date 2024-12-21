@@ -6,6 +6,8 @@ Dataset for 2D gaze direction estimation
 ## Overview
 GazeT dataset consists of 6744 sessions obtained through crowdsourcing and contains 144k annotated photos of operators in front of screen for the task of determining 2D gaze direction. The sample for training and testing was collected using toloka. The markers were asked to click on points on the screen and at the moment of clicking, the relative coordinate of the screen and the photo of the person at that moment were fixed. The marker also had to enter the diagonal of his screen and the type of his device (PC or laptop). See paper for details.
 
+For more information, please address our [paper](http://www.jip.ru/2024/421-429-2024.pdf).
+
 ## Comparison to other datasets
 
 | Dataset | Number of unique persons | Number of photos |
@@ -21,6 +23,17 @@ GazeT dataset consists of 6744 sessions obtained through crowdsourcing and conta
 If you would like to access the GazeT dataset, please fill out this [google form](https://docs.google.com/forms/d/e/1FAIpQLSciF9ur9a6BZbK7l66msrRwXeKFsaW2kki9HBj2sk0JTm7Mtw/viewform?usp=sf_link). The download link will be sent to you once the form is accepted.
 
 Please cite our paper in your publications if the GazeT dataset is used in your research:
+```
+@article{красильников2024gazet,
+  title={GazeT: улучшение определения трехмерного вектора направления взгляда оператора},
+  author={Красильников, МД and Никитин, МЮ},
+  journal={Информационные процессы},
+  volume={24},
+  number={4},
+  pages={421--429},
+  year={2024}
+}
+```
 
 ## Data reading and data structure
 Load dataset and put it under `./dataset`. Dataset contains images and metadata. Data loading process and visualizations can be found in `load_dataset.ipynb`.
@@ -54,3 +67,4 @@ The bbox for the crop is determined by four points of eyes using the following a
 ## Privacy Statement
 
 This dataset is released under the [Terms to Use GazeT](https://docs.google.com/forms/d/e/1FAIpQLSciF9ur9a6BZbK7l66msrRwXeKFsaW2kki9HBj2sk0JTm7Mtw/viewform?usp=sf_link), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
+
